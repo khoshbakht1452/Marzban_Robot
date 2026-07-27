@@ -1,0 +1,15 @@
+from aiogram.fsm.state import State, StatesGroup
+
+
+class AddUser(StatesGroup):
+    username = State()
+    data_limit = State()
+    expire_days = State()
+
+
+class ExtendUser(StatesGroup):
+    days = State()
+
+
+class AddDataUser(StatesGroup):
+    gb = State()
